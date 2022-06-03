@@ -20,12 +20,11 @@ Plug 'wakatime/vim-wakatime'  	" wakatime
 Plug 'itchyny/lightline.vim'	" lightlime
 Plug 'morhetz/gruvbox'			" gruvbox
 Plug 'scrooloose/syntastic'   	" syntax
-Plug 'andweeb/presence.nvim'    " discord rpc
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy Finder
+" Plug 'andweeb/presence.nvim'    " discord rpc
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy Finder
+" Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'sheerun/vim-polyglot'		" syntaxing for languages
 Plug 'jiangmiao/auto-pairs' 		" auto bracket pairing
-" Plug 'nvim-lua/plenary.nvim' 	" TeleScope
-" Plug 'nvim-telescope/telescope.nvim' "TeleScope
 " Plug 'preservim/nerdtree'     "Nerd Tree
 call plug#end()
 
