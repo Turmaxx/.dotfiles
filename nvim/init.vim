@@ -20,6 +20,11 @@ call plug#begin('~/.config/nvim/vim-plug')
 	" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy Finder
 	Plug 'sheerun/vim-polyglot'		" syntaxing for languages
 	Plug 'jiangmiao/auto-pairs' 		" auto bracket pairing
+	
+	" Telescope File Finder
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim'
+
 	" Plug 'preservim/nerdtree'     "Nerd Tree
 
 	" Themes
@@ -31,8 +36,10 @@ call plug#end()
 
 
 " GruvBox
-colorscheme gruvbox
-let g:gruvbox_contrast_dark  = '(medium)'
+" " Vim Script
+let g:catppuccin_flavour = "dusk" " latte, frappe, macchiato, mocha
+colorscheme catppuccin
+" let g:gruvbox_contrast_dark  = '(medium)'
 
 
 " -------------------------------------------------
