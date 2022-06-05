@@ -37,7 +37,7 @@ call plug#end()
 
 " GruvBox
 " " Vim Script
-let g:catppuccin_flavour = "dusk" " latte, frappe, macchiato, mocha
+let g:catppuccin_flavour = "macchiato" " latte, frappe, dusk, mocha
 colorscheme catppuccin
 " let g:gruvbox_contrast_dark  = '(medium)'
 
