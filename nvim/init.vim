@@ -31,6 +31,7 @@ call plug#begin('~/.config/nvim/vim-plug')
 	Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 	Plug 'morhetz/gruvbox'			" gruvbox
 
+	Plug 'vimwiki/vimwiki' 			" wiki
 call plug#end()
 " -------------------------------------------------
 
