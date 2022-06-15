@@ -12,7 +12,7 @@
 " Plugins (Plugin Manager = vim-plug [https://github.com/junegunn/vim-plug])
 call plug#begin('~/.config/nvim/vim-plug')
 	Plug 'wakatime/vim-wakatime'  	" wakatime
-	Plug 'itchyny/lightline.vim'	" lightlime
+	Plug 'itchyny/lightline.vim'	" lightline
 	Plug 'scrooloose/syntastic'   	" syntax
 	" Plug 'valloric/youcompleteme'	" auto completion
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -28,8 +28,12 @@ call plug#begin('~/.config/nvim/vim-plug')
 	" Plug 'preservim/nerdtree'     "Nerd Tree
 
 	" Themes
-	Plug 'catppuccin/nvim', {'as': 'catppuccin'}
-	Plug 'morhetz/gruvbox'			" gruvbox
+	" Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+	" Plug 'morhetz/gruvbox'			" gruvbox
+	Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+	
+
+
 
 	Plug 'vimwiki/vimwiki' 			" wiki
 call plug#end()
@@ -38,8 +42,13 @@ call plug#end()
 
 " GruvBox
 " " Vim Script
-let g:catppuccin_flavour = "macchiato" " latte, frappe, dusk, mocha
-colorscheme catppuccin
+"let g:catppuccin_flavour = macchiato" " latte, frappe, dusk, mocha
+"let g:tokyonight_style = "night"
+"colorscheme tokyonight
+let g:lightline = {
+	\ 'background': 'dark',
+	\ }
+"colorscheme catppuccin
 " let g:gruvbox_contrast_dark  = '(medium)'
 
 
