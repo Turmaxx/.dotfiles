@@ -1,28 +1,133 @@
-# Import files (Colors, Fonts, Etc)
-import:
-    - ~/.dotfiles/alacritty/colors.yml
-    - ~/.dotfiles/alacritty/fonts.yml
+#################### COLORS ##########################
+# ColorScheme
+schemes:
+    mountain: &mountain
+        primary:
+            background: "#0f0f0f"
+            foreground: "#f0f0f0"
+        normal:
+            black:   "#262626"
+            red:     "#ac8a8c"
+            green:   "#8aac8b"
+            yellow:  "#aca98a"
+            blue:    "#8f8aac"
+            magenta: "#ac8aac"
+            cyan:    "#8aabac"
+            white:   "#e7e7e7"
+        bright:
+            black:   "#4c4c4c"
+            red:     "#c49ea0"
+            green:   "#9ec49f"
+            yellow:  "#c4c19e"
+            blue:    "#a39ec4"
+            magenta: "#c49ec4"
+            cyan:    "#9ec3c4"
+            white:   "#f5f5f5"
 
+    blue: &blue
+        primary:
+            background: "#0a0d11"
+            foreground: "#FFFFFF"
+
+        # Normal colors
+        normal:
+            black: "#282A2E"
+            red: "#A54242"
+            green: "#49B77B"
+            yellow: "#DE935F"
+            blue: "#43AAC0"
+            magenta: "#85678F"
+            cyan: "#5E8D87"
+            white: "#C5C8C6"
+
+        # Bright colors
+        bright:
+            black: "#373B41"
+            red: "#CC6666"
+            green: "#49B77B"
+            yellow: "#F0C674"
+            blue: "#81A2BE"
+            magenta: "#B294BB"
+            cyan: "#5E8D87"
+            white: "#C5C8C6"
+
+# Apply the color scheme.
+colors: *mountain
+
+# If true, bold text is drawn using the bright color variants
+draw_bold_text_with_bright_colors: false
+
+
+#################### TERMINAL SETTINGS ##########################
 # Set environment variables
 env:
     TERM: xterm-256color
 
-# Terminal window settings
+# Terminal Window settings
 window:
+    # Opacity
     opacity: 0.85
-
+    # Padding
     padding:
         x: 8
         y: 8
-
-    # dimensions:
-        #   columns: 98
-        #   lines: 24
-
+    # Dimesions
+    dimensions:
+        columns: 98       #100  
+        lines: 24         #85
+            
+            
 # Scrolling
-history: 10000
-multiplier: 3
+scrolling:
+    history: 10000
+    multiplier: 3
+
 
 # Live config reload
 live_config_reload: true
 
+# selection:
+#     semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+#     save_to_clipboard: true
+
+# # Vi Mode
+keybindings:
+#     - { key: V, mods: Alt, mode: Vi, action: ScrollToBottom}
+#     - { key: Space, mods: Alt, action: ToggleViMode}
+
+
+#################### FONTS ##########################
+# Font configuration
+font:
+    # Normal font face
+    normal:
+        family: "JetBrains Mono"
+        style: Medium
+
+    # Bold font face
+    bold:
+        family: "JetBrains Mono"
+        style: Bold
+
+    # Italic font face
+    italic:
+        family: "JetBrains Mono"
+        style: Italic
+
+    # Bold italic font face
+    bold_italic:
+        family: "JetBrains Mono"
+        style: Bold Italic
+
+    # Font size
+    size: 12
+
+    # offset
+    offset:
+        x: -1
+        y: -1
+    
+    # glyph_offset
+    glyph_offset:
+        x: 0
+        y: 0
