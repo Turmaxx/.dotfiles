@@ -122,3 +122,8 @@ fi
 # Starship Prompt
 #eval "$(starship init bash)"
 . "$HOME/.cargo/env"
+export PATH=$PATH:/home/brook/.spicetify
+
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
