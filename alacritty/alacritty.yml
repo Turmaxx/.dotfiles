@@ -90,8 +90,8 @@ live_config_reload: true
 #     semantic_escape_chars: ',│`|:"'' ()[]{}<>'
 #     save_to_clipboard: true
 
-# # Vi Mode
-keybindings:
+# Vi Mode
+#keybindings:
 #     - { key: V, mods: Alt, mode: Vi, action: ScrollToBottom}
 #     - { key: Space, mods: Alt, action: ToggleViMode}
 
