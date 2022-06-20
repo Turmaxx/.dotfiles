@@ -1,58 +1,32 @@
 #################### COLORS ##########################
 # ColorScheme
 schemes:
-    mountain: &mountain
-        primary:
-            background: "#0f0f0f"
-            foreground: "#f0f0f0"
-        normal:
-            black:   "#262626"
-            red:     "#ac8a8c"
-            green:   "#8aac8b"
-            yellow:  "#aca98a"
-            blue:    "#8f8aac"
-            magenta: "#ac8aac"
-            cyan:    "#8aabac"
-            white:   "#e7e7e7"
-        bright:
-            black:   "#4c4c4c"
-            red:     "#c49ea0"
-            green:   "#9ec49f"
-            yellow:  "#c4c19e"
-            blue:    "#a39ec4"
-            magenta: "#c49ec4"
-            cyan:    "#9ec3c4"
-            white:   "#f5f5f5"
+     mountain: &mountain
+         primary:
+             background: "#0f0f0f"
+             foreground: "#f0f0f0"
+         normal:
+             black:   "#262626"
+             red:     "#ac8a8c"
+             green:   "#8aac8b"
+             yellow:  "#aca98a"
+             blue:    "#8f8aac"
+             magenta: "#ac8aac"
+             cyan:    "#8aabac"
+             white:   "#e7e7e7"
+         bright:
+             black:   "#4c4c4c"
+             red:     "#c49ea0"
+             green:   "#9ec49f"
+             yellow:  "#c4c19e"
+             blue:    "#a39ec4"
+             magenta: "#c49ec4"
+             cyan:    "#9ec3c4"
+             white:   "#f5f5f5"
 
-    blue: &blue
-        primary:
-            background: "#0a0d11"
-            foreground: "#FFFFFF"
-
-        # Normal colors
-        normal:
-            black: "#282A2E"
-            red: "#A54242"
-            green: "#49B77B"
-            yellow: "#DE935F"
-            blue: "#43AAC0"
-            magenta: "#85678F"
-            cyan: "#5E8D87"
-            white: "#C5C8C6"
-
-        # Bright colors
-        bright:
-            black: "#373B41"
-            red: "#CC6666"
-            green: "#49B77B"
-            yellow: "#F0C674"
-            blue: "#81A2BE"
-            magenta: "#B294BB"
-            cyan: "#5E8D87"
-            white: "#C5C8C6"
 
 # Apply the color scheme.
-colors: *mountain
+# colors: *mountain
 
 # If true, bold text is drawn using the bright color variants
 draw_bold_text_with_bright_colors: false
@@ -75,8 +49,7 @@ window:
     dimensions:
         columns: 98       #100  
         lines: 24         #85
-            
-            
+           
 # Scrolling
 scrolling:
     history: 10000
@@ -126,7 +99,7 @@ font:
     offset:
         x: -1
         y: -1
-    
+   
     # glyph_offset
     glyph_offset:
         x: 0
