@@ -87,5 +87,7 @@ cmd [[set formatoptions-=cro]]                      -- Stop newline continution 
 cmd [[set complete+=kspell]]                        -- auto complete with spellcheck
 cmd [[set completeopt=menuone,longest]]             -- auto complete menu (It's pretty great)
 cmd [[set nocompatible]]                            -- Disable compatibility to old-time vi
+cmd [[set list]]
+cmd [[set listchars=tab:\|\]]
 
 apply(settings)

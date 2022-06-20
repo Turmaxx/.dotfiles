@@ -70,12 +70,14 @@ return packer.startup(function(use)
 
         
 
-        -- Impatient, Smooth Scrolling
+        -- Impatient, Smooth Scrolling, Telescope
         "lewis6991/impatient.nvim",                   -- Speed up loading Lua modules to improve startup time
         "karb94/neoscroll.nvim",                      -- Smooth scrolling plugin written in lua
+        "nvim-telescope/telescope.nvim",              -- Telescope = fzf on crack
         
-        -- Discord
+        -- Discord, Wakatime
         "andweeb/presence.nvim",                      -- Discord RPC
+        "wakatime/vim-wakatime",                      -- Wakatime
     
         -- Nord
         -- "shaunsingh/nord.nvim",                    -- Neovim theme based off of the Nord Color Palette
