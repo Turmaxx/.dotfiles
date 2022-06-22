@@ -9,8 +9,8 @@ schemes:
              black:   "#262626"
              red:     "#ac8a8c"
              green:   "#8aac8b"
-             yellow:  "#aca98a"
-             blue:    "#8f8aac"
+             yellow:  "#aca98a" 
+             blue:    "#8f8aac" 
              magenta: "#ac8aac"
              cyan:    "#8aabac"
              white:   "#e7e7e7"
@@ -19,14 +19,33 @@ schemes:
              red:     "#c49ea0"
              green:   "#9ec49f"
              yellow:  "#c4c19e"
-             blue:    "#a39ec4"
-             magenta: "#c49ec4"
-             cyan:    "#9ec3c4"
-             white:   "#f5f5f5"
+
+     ala: &ala
+          primary:
+             background: "#0f0f0f"
+             foreground: "#f0f0f0"
+          normal:
+            black: "#32344a"
+            red: "#f7768e"
+            green: "#9ece6a"
+            yellow: "#e0af68"
+            blue: "#7aa2f7"
+            magenta: "#ad8ee6"
+            cyan: "#449dab"
+            white: "#787c99"
+          bright:
+            black: "#444b6a"
+            red: "#ff7a93"
+            green: "#b9f27c"
+            yellow: "#ff9e64"
+            blue: "#7da6ff"
+            magenta: "#bb9af7"
+            cyan: "#0db9d7"
+            white: "#acb0d0"
 
 
 # Apply the color scheme.
-# colors: *mountain
+colors: *ala
 
 # If true, bold text is drawn using the bright color variants
 draw_bold_text_with_bright_colors: false
@@ -40,7 +59,7 @@ env:
 # Terminal Window settings
 window:
     # Opacity
-    opacity: 0.85
+    opacity: .85 
     # Padding
     padding:
         x: 8
@@ -48,11 +67,9 @@ window:
     # Dimesions
     dimensions:
         columns: 98       #100  
-        lines: 24         #85
-           
-# Scrolling
+        lines: 24         #85 Scrolling
 scrolling:
-    history: 10000
+    history: 1000  
     multiplier: 3
 
 
