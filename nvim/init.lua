@@ -17,14 +17,13 @@ local core_modules = {
 	"configs/completion",     -- Auto Completion
 	"configs/alpha",          -- Welcome Screen
 	"configs/nvim-tree",      -- File Explorer
-	"configs/gitsigns",       -- Git Integration
+	-- "configs/gitsigns",       -- Git Integration
 	"configs/commentary",     -- Easily Comment Lines
-	"configs/lualine",		  -- Status Line
+	"configs/statusline",		  -- Status Line
 --	"configs/statusline",     -- Custom Status Line
 --	"configs/colorizer",      -- Colors Highlighter
-	"configs/smooth-scroll",  -- Smooth Scrolling
-	"configs/toggleterm",     -- Floating Terminal
-
+	-- "configs/smooth-scroll",  -- Smooth Scrolling
+	-- "configs/toggleterm",     -- Floating Terminal
 }
 
 
@@ -33,5 +32,6 @@ for _, module in ipairs(core_modules) do
     local ok, err = pcall(require, module)
     if not ok then
       return
+      vim.api.nvim_err_writeln("Failed to lead" .. module .. "\n\n" .. err)
     end
 end
