@@ -1,37 +1,30 @@
---[[---------------------------------------------]]--
---            init.lua - Init file                 --
---              Author: Brook  		               --
---[[---------------------------------------------]]--
+-- INIT.LUA
+function run(core_modules)
+	for _, module in ipairs(core_modules) do
+		local ok, err = pcall(require, module)
+		if not ok then
+			return
+		end
+	end
+end
 
 local core_modules = {
-	---- My Settings ----------------------------------
-	"user/options",		--  General Settings
-	"user/keymaps",		--  Custom Keymaps
-    "user/plugins",		--  Plugins + Packer Config
+	"brook/options",
+	"brook/keymaps",
+	"brook/plugins",
 
-
---	---- Plugin Configurations --------------------------
-	"configs/impatient",      -- Improve Startup Time
---	-- "configs/colorschemes",   -- All Colorschemes
-	"configs/treesitter",     -- Syntax Highlighting
-	"configs/completion",     -- Auto Completion
-	"configs/alpha",          -- Welcome Screen
-	"configs/nvim-tree",      -- File Explorer
-	-- "configs/gitsigns",       -- Git Integration
-	"configs/commentary",     -- Easily Comment Lines
-	"configs/statusline",		  -- Status Line
---	"configs/statusline",     -- Custom Status Line
---	"configs/colorizer",      -- Colors Highlighter
-	-- "configs/smooth-scroll",  -- Smooth Scrolling
-	-- "configs/toggleterm",     -- Floating Terminal
+    "configs/impatient",
+    "configs/completion",
+    "configs/comments",
+    "configs/gitsigns",
+	"configs/telescope",
+    "configs/statusline",
+    "configs/alpha",
+	"configs/nvim-tree",
+	"configs/toggleterm",
+	"configs/colorizer",
+	"configs/autopairs",
+	"configs/colorscheme",
 }
 
-
--- Using pcall we can handle better any loading issues
-for _, module in ipairs(core_modules) do
-    local ok, err = pcall(require, module)
-    if not ok then
-      return
-      vim.api.nvim_err_writeln("Failed to lead" .. module .. "\n\n" .. err)
-    end
-end
+run(core_modules)

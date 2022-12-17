@@ -15,14 +15,14 @@ vim.cmd [[ au User AlphaReady if winnr('$') == 1 | set laststatus=1 ]]
 
 -- Custom Footer
 dashboard.section.footer.val = {
-  "Write Programs That Do One Thing And Do It Well.",
+  "Doin everything like ma shirt XL",
 }
 
 -- Custom Section
 dashboard.section.buttons.val = {
 	dashboard.button("n", "  Create New file",       ":set laststatus=3 | :ene <BAR> startinsert <CR>"),
 	dashboard.button("e", "  Open File Explorer",    ":set laststatus=3 | :NvimTreeOpen <CR>"),
-  dashboard.button("v", "  Neovim Settings ",      ":set laststatus=3 | e ~/.config/nvim/init.lua <CR>"),
+    dashboard.button("v", "  Neovim Settings ",      ":set laststatus=3 | e ~/.config/nvim/init.lua <CR>"),
 	dashboard.button("u", "  Update Nvim Plugins",   ":PackerSync <CR>"),
 	dashboard.button("q", "  Quit Neovim",           ":qa<CR>"),
 }
@@ -59,12 +59,12 @@ dashboard.section.header.val = {
 
 -- Layout For Neovim ascii art
 dashboard.config.layout = {
-  { type = "padding", val = 5 },
-  dashboard.section.header,
-  { type = "padding", val = 2 },
-  dashboard.section.buttons,
-  { type = "padding", val = 1 },
-  dashboard.section.footer,
+    { type = "padding", val = 5 },
+    dashboard.section.header,
+    { type = "padding", val = 2 },
+    dashboard.section.buttons,
+    { type = "padding", val = 1 },
+    dashboard.section.footer,
 }
 
 -- -- Doom Neovim ascii art
@@ -127,4 +127,3 @@ dashboard.config.layout = {
 -- https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Red+Phoenix&text=Your+text+here+
 
 alpha.setup(dashboard.opts)
-

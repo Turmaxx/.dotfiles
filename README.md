@@ -1,25 +1,16 @@
 <!-- HEADER & SHIELDS -->
 <div align="center">
+
 <h1>My Personal Dotfiles</h1>
 
-![](https://img.shields.io/gitlab/last-commit/brook-seyoum/dotfiles?color=212121&logo=&logoColor=131821&style=for-the-badge)
-![](https://img.shields.io/gitlab/stars/brook-seyoum/dotfiles?color=212121&logo=&logoColor=131821&style=for-the-badge)
+![](https://img.shields.io/github/last-commit/turmaxx/.dotfiles?color=212121&logo=&logoColor=131821&style=for-the-badge)
+![](https://img.shields.io/github/stars/turmaxx/.dotfiles?color=212121&logo=&logoColor=131821&style=for-the-badge)
 
-</div>
 
-## Description
+<b>Performance & Minimalism</b>
 
-A Simple, Performant and Minimalistic dotfiles for Me Workflow and my Machine
-I'll add more configurations as my setup evolves over the years but for now.
 
-## Install/Setup
-
-```bash
-git clone https://gitlab.com/brook-seyoum/dotfiles
-cd dotfiles
-```
-
-## Components
+<h3>System Components</h3>
 
 |     App     |    Link     |
 | ----------- | ----------- |
@@ -27,8 +18,8 @@ cd dotfiles
 | **Web browser**  | [Firefox][FIREFOX]    |
 | **Editor**       | [Neovim][NEOVIM]      |
 | **Shell**        | [Bash][BASH]          |
-| **Another Shell**| [Fish][FISH]          |
 | **Hotel**        | [Trivago :)][RICKROLL]| <!--RICK ROLL LINK-->
+
 
 <h3>Terminal Apps</h3>
 
@@ -36,8 +27,7 @@ cd dotfiles
 | ----------- | -----------                |
 | **lazygit** |  [Lazygit][LAZYGIT]        |
 
-## Note
-Dotfiles have been moved to [Gitlab](https://gitlab.com/brook-seyoum/dotfiles)
+</div>
 
 <!-- LINKS -->
 [RICKROLL]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
@@ -45,5 +35,4 @@ Dotfiles have been moved to [Gitlab](https://gitlab.com/brook-seyoum/dotfiles)
 [FIREFOX]: https://www.mozilla.org/en-US/firefox/new/
 [ALACRITTY]: https://github.com/alacritty/alacritty
 [BASH]: https://github.com/gitGNU/gnu_bash
-[FISH]: https://github.com/fish-shell/fish-shell
 [LAZYGIT]: https://github.com/jesseduffield/lazygit

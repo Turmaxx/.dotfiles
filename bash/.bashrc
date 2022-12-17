@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+#!~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -87,14 +87,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias vim="nvim"
-alias py="python3"
-#alias cl="clear"
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -120,10 +112,20 @@ if ! shopt -oq posix; then
 fi
 
 # Starship Prompt
-#eval "$(starship init bash)"
+eval "$(starship init bash)"
+ 
+# Cargo Rust
 . "$HOME/.cargo/env"
-export PATH=$PATH:/home/brook/.spicetify
 
+# Go PATH
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
+
+
+# Ruby PATH
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin/:$PATH"
+
+# gradle
+export PATH=$PATH:/home/brook/gradle/bin

@@ -1,8 +1,0 @@
-[filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        process = git-lfs filter-process
-        required = true
-[user]
-        name = brook-seyoum
-        email = 88465473+brook-seyoum@users.noreply.github.com
