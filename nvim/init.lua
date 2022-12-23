@@ -25,6 +25,8 @@ local core_modules = {
 	"configs/colorizer",
 	"configs/autopairs",
 	"configs/colorscheme",
+    "configs/lsp",
+    "configs/treesitter"
 }
 
 run(core_modules)

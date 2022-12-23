@@ -36,7 +36,7 @@ nvim_tree.setup { -- BEGIN_DEFAULT_OPTS
     centralize_selection = false,
     width = 30,
     hide_root_folder = false,
-    side = "left",
+    side = "right",
     preserve_window_proportions = false,
     number = true,
     relativenumber = false,

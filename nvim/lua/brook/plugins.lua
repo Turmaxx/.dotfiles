@@ -48,34 +48,43 @@ return packer.startup(function(use)
 		"nvim-lua/popup.nvim",
 		"nvim-lua/plenary.nvim",
 		"kyazdani42/nvim-web-devicons",
-  	}	
-
-	-- CMP and LSP (Completion and Language Server Protocol)
+  	}
+    
+    -- LSP-Zero
     use {
+        "VonHeikemen/lsp-zero.nvim",
+        requires = {
+            -- LSP Support
+            {"neovim/nvim-lspconfig"},
+            {"williamboman/mason.nvim"},
+            {"williamboman/mason-lspconfig.nvim"},
 
-        "hrsh7th/nvim-cmp",
-        "hrsh7th/cmp-buffer",
-	    "hrsh7th/cmp-path",
-	    "hrsh7th/cmp-cmdline",
-	    "hrsh7th/cmp-nvim-lsp",
-	    "hrsh7th/cmp-nvim-lua",
-	    "saadparwaiz1/cmp_luasnip", 
+            -- Autocompletion
+            {"hrsh7th/nvim-cmp"},
+            {"hrsh7th/cmp-buffer"},
+            {"hrsh7th/cmp-path"},
+            {"hrsh7th/cmp-nvim-lsp"},
+            {"hrsh7th/cmp-nvim-lua"},
+            {"hrsh7th/cmp-cmdline"},
+            {"saadparwaiz1/cmp_luasnip"},
 
-		"neovim/nvim-lspconfig",
-		"williamboman/nvim-lsp-installer",
-
-        "L3MON4D3/LuaSnip", 
-	    "rafamadriz/friendly-snippets",
+            -- Snippets
+            {"L3MON4D3/LuaSnip"},
+            {"rafamadriz/friendly-snippets"},
+        }
     }
 
     -- Colorscheme
-    use "navarasu/onedark.nvim"
+    use {
+        "tanvirtin/monokai.nvim",
+    }
 
 	-- Utils
 	use {
 
 		"kyazdani42/nvim-tree.lua",
 		"nvim-telescope/telescope.nvim",
+        "theprimeagen/harpoon",
 
         "goolord/alpha-nvim",
         "nvim-lualine/lualine.nvim",
@@ -92,6 +101,12 @@ return packer.startup(function(use)
 
 	}
     
+    -- Treesitter
+    use( 
+        "nvim-treesitter/nvim-treesitter",
+        {run = ":TSUpdate"}
+    )
+
     -- Git
     use {
         "lewis6991/gitsigns.nvim",

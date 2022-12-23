@@ -3,6 +3,9 @@ local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
 
+-- local mark = require("harpoon.mark")
+-- local ui = require("harpoon.mark")
+
 ------------------------------------------------
 --            Leader Key
 ------------------------------------------------
@@ -92,3 +95,15 @@ map ("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 map ("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 map ("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 map ("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
+------------------------------------------------
+-- 			  Harpoon Mode
+------------------------------------------------
+-- Buffer Control
+-- map ("n", "<leader>a", mark.add_file)
+-- map ("n", "<C-e>", ui.toggle_quick_menu)
+-- 
+-- map ("n", "<C-h>", function() ui.nav_file(1), end)
+-- map ("n", "<C-t>", function() ui.nav_file(2), end)
+-- map ("n", "<C-n>", function() ui.nav_file(3), end)
+-- map ("n", "<C-s>", function() ui.nav_file(4), end)
