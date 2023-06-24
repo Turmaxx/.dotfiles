@@ -1,9 +1,10 @@
+#!/bin/bash
 # This is a script to duplicate all the apps that I use on a daily basis on my windows machine 
 # to any new windows machine that I am on
 
 # Written on June 06, 2023
 
-# Wbe Browsers
+# Web Browsers
 winget install -e --id Mozilla.Firefox
 winget install -e --id Google.Chrome
 
