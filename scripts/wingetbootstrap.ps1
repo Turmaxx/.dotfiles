@@ -19,7 +19,7 @@ $apps = @(
     # Note-Taking
     "Notion.Notion"
     "Obsidian.Obsidian"
-    
+
     # Messaging and Meetings
     "Discord.Discord"
     "WhatsApp.WhatsApp"
