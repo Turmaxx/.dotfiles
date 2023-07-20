@@ -2,3 +2,6 @@
     path = wallpapers/kitsunebishi
     url = https://github.com/kitsunebishi/Wallpapers
     branch = main
+[submodule "wallpapers/kitesunebishi"]
+	path = wallpapers/kitesunebishi
+	url = https://github.com/kitsunebishi/Wallpapers.git
