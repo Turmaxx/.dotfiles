@@ -1,0 +1,4 @@
+[submodule "wallpapers/kitesunebishi"]
+    path = wallpapers/kitesunebishi
+    url = https://github.com/kitesunebishi/Wallpapers.git
+    branch = main
