@@ -1,0 +1,38 @@
+inherits = "onedark"
+"ui.background" = {}
+
+[editor]
+auto-completiton = true
+auto-format = true
+auto-save = true
+bufferline = "always"
+line-number = "relative"
+middle-click-paste = true
+mouse = false
+  [cursor-shape]
+    insert = "bar"
+    normal = "block"
+    select = "underline"
+  [file-picker]
+    hidden = false
+  [indent-guides]
+    character = "▏"
+    rainbow-option = "normal"
+    render = true
+  [soft-wrap]
+    enable = true
+  [whitespace]
+    render = "all"
+    [characters]
+      nbsp = "⍽"
+      newline = "⤶"
+      space = "·"
+      tab = "→"
+
+[keys.normal]
+tab = ":bn"
+C-q = ":bc"
+S-tab = ":bp"
+C-u = ["half_page_up", "align_view_center"]
+C-d = ["half_page_down", "align_view_center"]
+X = "extend_line_above"
