@@ -1,25 +1,26 @@
--- Pull in the wezterm API
 local wezterm = require "wezterm"
--- This table is the declaration that will hold the configuration
-local config = {}
 
--- In newer versions of wezterm, use the config_builder which will
--- help provide clearer error messages
-if wezterm.config_builder then
-  config = wezterm.config_builder()
-end
-
--- This is where you actually apply your config choices
-config = {
-  color_scheme = "Tommorow Night",
-  window_background_opacity = 0.75,
-  font_size = 11,
+return {
+  color_scheme = "Tokyo Night",
+  font = wezterm.font_with_fallback({
+    family = "JetBrainsMono Nerd Font",
+    weight = "Regular",
+    italic = true,
+  }),
+  font_size = 10,
+  window_decorations = "NONE",
+  window_background_opacity = 0.85,
   hide_tab_bar_if_only_one_tab = true,
+  tab_bar_at_bottom = true,
+  audible_bell = "Disabled",
+  cursor_blink_rate = 0,
   keys = {
-    {key="n", mods="SHIFT|CTRL", action="ToggleFullScreen"},
-  }
+    { key = "f", mods = "SHIFT|CTRL", action = "ToggleFullScreen" },
+  },
+  window_padding = {
+    top = 0,
+    bottom = 0,
+    left = 1,
+    right = 1,
+  },
 }
-
--- and finally, return the configuration to wezterm
-return config
-
