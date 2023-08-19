@@ -12,12 +12,12 @@ window:
     y: 8
   # Dimensions
   dimensions:
-    columns: 98        
-    lines: 24          
+    columns: 98
+    lines: 24
 
 # Scrolling
 scrolling:
-  history: 1000  
+  history: 1000
   multiplier: 3
 
 # Live config reload
@@ -28,7 +28,6 @@ draw_bold_text_with_bright_colors: false
 
 # selection
 selection:
-    semantic_escape_chars: ',│`|:"'' ()[]{}<>'
     save_to_clipboard: true
 
 # Keybindings
